@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This library provides tools to process gbm daily continuous time-tagged event (TTE) data for pulsar analysis. There are 
-several steps required for this task: (1) Download the data, (2) barycentering POSHIST, (3) filter the data for 
-maximizing signal-to-noise and barycenter correct the events TIME, (4) phase-calculation, and (5) visualization. 
+This library provides tools to process Fermi GBM daily continuous time-tagged event (TTE) data for pulsar analysis. 
+There are several steps required for this task: (1) Download the data, (2) barycentering POSHIST, (3) filter the data 
+for maximizing signal-to-noise and barycenter correct the events TIME, (4) phase-calculation, and (5) visualization. 
 Continuous TTE files are quite large, and we shall be dealing with over 10^8 rows of "good" events after filtering the 
 data per day. For this purpose, **Dask** is utilized to perform almost all operations lazily before computing the 
 output. Testing this on my 32 GB, 10-core, M1 machine, I manage to run a 1-day analysis in about 2 minutes utilizing 8 
