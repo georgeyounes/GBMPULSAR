@@ -1,0 +1,199 @@
+[2025-05-07 12:26:20]     INFO Calculated Good Time Intervals for:
+PosHist file: ../glg_poshist_all_171106_v01.fit
+ Detector: n0
+Source RA: 83.633218
+Source DEC: 22.014464
+GTI:
+          START          STOP DET
+0  5.316194e+08  5.316196e+08  n0
+1  5.316307e+08  5.316310e+08  n0
+2  5.316527e+08  5.316539e+08  n0
+3  5.316642e+08  5.316653e+08  n0
+4  5.316756e+08  5.316767e+08  n0
+5  5.316870e+08  5.316882e+08  n0
+6  5.316985e+08  5.316996e+08  n0
+Total exposure 6120.0
+ (filterttedataforsource.py:193)
+[2025-05-07 12:26:21]     INFO No GTI for detector n1 (gbmpulsarpipe.py:148)
+[2025-05-07 12:26:22]     INFO No GTI for detector n2 (gbmpulsarpipe.py:148)
+[2025-05-07 12:26:23]     INFO Calculated Good Time Intervals for:
+PosHist file: ../glg_poshist_all_171106_v01.fit
+ Detector: n3
+Source RA: 83.633218
+Source DEC: 22.014464
+GTI:
+          START          STOP DET
+0  5.316194e+08  5.316195e+08  n3
+1  5.316307e+08  5.316309e+08  n3
+2  5.316525e+08  5.316537e+08  n3
+3  5.316639e+08  5.316652e+08  n3
+4  5.316753e+08  5.316766e+08  n3
+5  5.316868e+08  5.316880e+08  n3
+6  5.316985e+08  5.316995e+08  n3
+Total exposure 6250.0
+ (filterttedataforsource.py:193)
+[2025-05-07 12:26:24]     INFO No GTI for detector n4 (gbmpulsarpipe.py:148)
+[2025-05-07 12:26:25]     INFO No GTI for detector n5 (gbmpulsarpipe.py:148)
+[2025-05-07 12:26:26]     INFO Calculated Good Time Intervals for:
+PosHist file: ../glg_poshist_all_171106_v01.fit
+ Detector: n6
+Source RA: 83.633218
+Source DEC: 22.014464
+GTI:
+           START          STOP DET
+0   5.316194e+08  5.316197e+08  n6
+1   5.316253e+08  5.316264e+08  n6
+2   5.316307e+08  5.316311e+08  n6
+3   5.316367e+08  5.316378e+08  n6
+4   5.316404e+08  5.316409e+08  n6
+5   5.316426e+08  5.316426e+08  n6
+6   5.316484e+08  5.316492e+08  n6
+7   5.316519e+08  5.316540e+08  n6
+8   5.316596e+08  5.316607e+08  n6
+9   5.316633e+08  5.316654e+08  n6
+10  5.316710e+08  5.316721e+08  n6
+11  5.316747e+08  5.316769e+08  n6
+12  5.316824e+08  5.316835e+08  n6
+13  5.316862e+08  5.316883e+08  n6
+14  5.316939e+08  5.316949e+08  n6
+15  5.316985e+08  5.316997e+08  n6
+16  5.317053e+08  5.317054e+08  n6
+Total exposure 18439.000011086464
+ (filterttedataforsource.py:193)
+[2025-05-07 12:26:27]     INFO Calculated Good Time Intervals for:
+PosHist file: ../glg_poshist_all_171106_v01.fit
+ Detector: n7
+Source RA: 83.633218
+Source DEC: 22.014464
+GTI:
+           START          STOP DET
+0   5.316194e+08  5.316197e+08  n7
+1   5.316253e+08  5.316264e+08  n7
+2   5.316307e+08  5.316312e+08  n7
+3   5.316367e+08  5.316379e+08  n7
+4   5.316404e+08  5.316409e+08  n7
+5   5.316426e+08  5.316426e+08  n7
+6   5.316484e+08  5.316493e+08  n7
+7   5.316518e+08  5.316540e+08  n7
+8   5.316596e+08  5.316607e+08  n7
+9   5.316632e+08  5.316655e+08  n7
+10  5.316710e+08  5.316721e+08  n7
+11  5.316746e+08  5.316769e+08  n7
+12  5.316824e+08  5.316836e+08  n7
+13  5.316861e+08  5.316883e+08  n7
+14  5.316939e+08  5.316950e+08  n7
+15  5.316985e+08  5.316998e+08  n7
+16  5.317053e+08  5.317054e+08  n7
+Total exposure 19489.000011086464
+ (filterttedataforsource.py:193)
+[2025-05-07 12:26:28]     INFO Calculated Good Time Intervals for:
+PosHist file: ../glg_poshist_all_171106_v01.fit
+ Detector: n8
+Source RA: 83.633218
+Source DEC: 22.014464
+GTI:
+           START          STOP DET
+0   5.316257e+08  5.316264e+08  n8
+1   5.316371e+08  5.316379e+08  n8
+2   5.316407e+08  5.316409e+08  n8
+3   5.316485e+08  5.316493e+08  n8
+4   5.316522e+08  5.316525e+08  n8
+5   5.316600e+08  5.316607e+08  n8
+6   5.316636e+08  5.316640e+08  n8
+7   5.316714e+08  5.316721e+08  n8
+8   5.316750e+08  5.316754e+08  n8
+9   5.316828e+08  5.316836e+08  n8
+10  5.316865e+08  5.316868e+08  n8
+11  5.316942e+08  5.316950e+08  n8
+Total exposure 6980.000003039837
+ (filterttedataforsource.py:193)
+[2025-05-07 12:26:30]     INFO Calculated Good Time Intervals for:
+PosHist file: ../glg_poshist_all_171106_v01.fit
+ Detector: n9
+Source RA: 83.633218
+Source DEC: 22.014464
+GTI:
+           START          STOP DET
+0   5.316194e+08  5.316199e+08  n9
+1   5.316248e+08  5.316256e+08  n9
+2   5.316309e+08  5.316313e+08  n9
+3   5.316366e+08  5.316370e+08  n9
+4   5.316426e+08  5.316427e+08  n9
+5   5.316469e+08  5.316469e+08  n9
+6   5.316484e+08  5.316484e+08  n9
+7   5.316537e+08  5.316542e+08  n9
+8   5.316583e+08  5.316599e+08  n9
+9   5.316652e+08  5.316656e+08  n9
+10  5.316697e+08  5.316713e+08  n9
+11  5.316766e+08  5.316770e+08  n9
+12  5.316811e+08  5.316827e+08  n9
+13  5.316880e+08  5.316885e+08  n9
+14  5.316925e+08  5.316941e+08  n9
+15  5.316995e+08  5.316999e+08  n9
+16  5.317044e+08  5.317054e+08  n9
+Total exposure 11926.000008046627
+ (filterttedataforsource.py:193)
+[2025-05-07 12:26:31]     INFO Calculated Good Time Intervals for:
+PosHist file: ../glg_poshist_all_171106_v01.fit
+ Detector: na
+Source RA: 83.633218
+Source DEC: 22.014464
+GTI:
+           START          STOP DET
+0   5.316197e+08  5.316207e+08  na
+1   5.316248e+08  5.316253e+08  na
+2   5.316312e+08  5.316322e+08  na
+3   5.316346e+08  5.316348e+08  na
+4   5.316366e+08  5.316367e+08  na
+5   5.316426e+08  5.316436e+08  na
+6   5.316461e+08  5.316469e+08  na
+7   5.316540e+08  5.316550e+08  na
+8   5.316575e+08  5.316596e+08  na
+9   5.316655e+08  5.316664e+08  na
+10  5.316689e+08  5.316710e+08  na
+11  5.316769e+08  5.316779e+08  na
+12  5.316803e+08  5.316824e+08  na
+13  5.316883e+08  5.316893e+08  na
+14  5.316924e+08  5.316939e+08  na
+15  5.316998e+08  5.317007e+08  na
+16  5.317044e+08  5.317053e+08  na
+Total exposure 18083.000000953674
+ (filterttedataforsource.py:193)
+[2025-05-07 12:26:32]     INFO Calculated Good Time Intervals for:
+PosHist file: ../glg_poshist_all_171106_v01.fit
+ Detector: nb
+Source RA: 83.633218
+Source DEC: 22.014464
+GTI:
+           START          STOP DET
+0   5.316196e+08  5.316207e+08  nb
+1   5.316248e+08  5.316254e+08  nb
+2   5.316311e+08  5.316322e+08  nb
+3   5.316346e+08  5.316348e+08  nb
+4   5.316366e+08  5.316369e+08  nb
+5   5.316404e+08  5.316408e+08  nb
+6   5.316426e+08  5.316436e+08  nb
+7   5.316461e+08  5.316469e+08  nb
+8   5.316518e+08  5.316523e+08  nb
+9   5.316539e+08  5.316550e+08  nb
+10  5.316575e+08  5.316597e+08  nb
+11  5.316632e+08  5.316637e+08  nb
+12  5.316653e+08  5.316664e+08  nb
+13  5.316689e+08  5.316711e+08  nb
+14  5.316746e+08  5.316751e+08  nb
+15  5.316768e+08  5.316779e+08  nb
+16  5.316803e+08  5.316826e+08  nb
+17  5.316830e+08  5.316830e+08  nb
+18  5.316861e+08  5.316866e+08  nb
+19  5.316882e+08  5.316893e+08  nb
+20  5.316924e+08  5.316940e+08  nb
+21  5.316944e+08  5.316945e+08  nb
+22  5.316996e+08  5.317007e+08  nb
+23  5.317044e+08  5.317054e+08  nb
+Total exposure 22342.0000090003
+ (filterttedataforsource.py:193)
+[2025-05-07 12:28:13]     INFO Total exposure summed over all good detectors: 109629.00004321337 over 8 
+Total number of counts across all good detectors: 142382745
+Rate = 1298.768983972086
+ (gbmpulsarpipe.py:202)
+[2025-05-07 12:28:39]     INFO Total runtime: 142.62s (gbmpulsarpipe.py:280)

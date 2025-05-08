@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "GBMPULSAR"
+version = "0.1.0"
+dependencies = [
+  "astropy",
+  "numpy",
+  "matplotlib",
+  "scipy",
+  "dask",
+  "pandas"
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "George Younes", email = "george.a.younes@nasa.gov"},
+]
+maintainers = [
+  {name = "George Younes", email = "george.a.younes@nasa.gov"}
+]
+description = "Code for pulsar timing analysis of Fermi GBM data"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["Fermi", "GBM", "High Energy Astrophysics", "X-ray", "Astronomy", "Astrophysics", "pulsar", "timing", "toa", "pulse"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python"
+]
+
+[project.scripts]
+getgbmdailydata = "gbmpulsar.getgbmdailydata:main"
+gbmpulsarpipe = "gbmpulsar.gbmpulsarpipe:main"
+barycenterposhist = "gbmpulsar.barycenterposhist:main"
+gbmmergepulseprofiles = "gbmpulsar.gbmpulseprofile:main"
