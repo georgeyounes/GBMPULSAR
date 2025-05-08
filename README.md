@@ -29,7 +29,7 @@ You may add the '-e' option to pip to install as an editable package.
 
 The code has been tested on Python 3.9.16, and it requires matplotlib, pandas, scipy, astropy, numpy, and dask.
 
-## Detailed description
+## Description
 
 Below, I provide a short description of each step in the process of building the final products:
 
