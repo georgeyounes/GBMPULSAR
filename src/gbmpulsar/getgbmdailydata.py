@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 This code downloads GBM CTTE (TTE), CSPEC, CTIME, or poshist daily data given a full date
 Be aware CTTE data is quite large and requires plenty of disk space

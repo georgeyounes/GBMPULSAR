@@ -3,18 +3,18 @@
 ## Introduction
 
 This library provides tools to process gbm daily continuous time-tagged event (TTE) data for pulsar analysis. There are 
-several steps required for this task: (1) barycentering POSHIST, (2) filter the data for maximizing signal-to-noise and 
-barycenter correct the events TIME, (3) phase-calculation, and (4) visualization. Continuous TTE files are quite large, 
-and we shall be dealing with over 10^8 rows of "good" events after filtering the data per day. For this purpose Dask is 
-utilized to perform almost all operations lazily before computing the output. Testing this on my 32 GB, 10-core, M1 
-machine, I manage to run a 1-day analysis in about 2 minutes utilizing 8 threads, compared to about 18 minutes when not 
-running in parallel. The tools are scalable so the user should be able to speed things up even further with more cores 
-and available memory. 
+several steps required for this task: (1) Download the data, (2) barycentering POSHIST, (3) filter the data for 
+maximizing signal-to-noise and barycenter correct the events TIME, (4) phase-calculation, and (5) visualization. 
+Continuous TTE files are quite large, and we shall be dealing with over 10^8 rows of "good" events after filtering the 
+data per day. For this purpose, **Dask** is utilized to perform almost all operations lazily before computing the 
+output. Testing this on my 32 GB, 10-core, M1 machine, I manage to run a 1-day analysis in about 2 minutes utilizing 8 
+threads, compared to about 18 minutes when not running in parallel. The tools are scalable so the user should be able to
+speed things up even further with more cores and available memory. 
 
 ## Acknowledgements
 
 I am grateful to the discussions I have had with Paul Ray on data barycentering and pulsar timing. This work is 
-inspired by the long-term (RXTE, Swift/XRT, and NICER) pulsar monitoring work.
+inspired by the long-term RXTE, Swift/XRT, and NICER magnetar and pulsar monitoring work.
 
 ## Installation
 
@@ -33,7 +33,27 @@ The code has been tested on Python 3.9.16, and it requires matplotlib, pandas, s
 
 Below, I provide a short description of each step in the process of building the final products:
 
-#### (1) Barycentring
+#### (1) Download continuous TTE data
+
+A command line tool **getgbmdailydata** is available to download the required data, e.g., as follows
+
+```bash
+  getgbmdailydata 2017/11/01 -t tte
+```
+which will download all the tte files for all detectors into the current directory. Optional arguments allow for a 
+different output directory (which will be created if it does not exist). To download the POSHIST file
+
+```bash
+  getgbmdailydata 2017/11/01 -t poshist
+```
+
+Note that the TTE files are broken into chuncks of 24 files for each hour of the day, and there are 12 NaI detectors. 
+Each seperate file is about 20 MB large (total of several GB per day). Hence, make sure you are on a fast internet 
+before you go down this route. Moreover, I highly recommend that all 13+ years worth of data is downloaded (about 30 TBs
+or so) to a cluster or any data storage space. You can always point the code to that root directory for analysis. 
+Of course, if your analysis can be done with portion of the dates, the above is not a necessity.
+
+#### (2) Barycentring
 
 Unfortunately the GBM team does not provide a barycentering tool for their data, and building one 
 from scratch requires considerable thought and, especially, testing. Fermi LAT team, on the other hand, provide a fast 
@@ -59,7 +79,7 @@ file, and *lat_spacecraft_merged.fits* is the LAT spacecraft file. Make sure the
 Finally, you of course need to have the [fermitools](https://github.com/fermi-lat/Fermitools-conda/wiki) installed in 
 order to have access to **gtbary**.
 
-#### (2) Filtering and event barycentering
+#### (3) Filtering and event barycentering
 
 In order to maximize signal-to-noise, we perform a series of orbital filtering to minimize the background contribution 
 to the source events. These are detector-to-source angle which dictates the detector effective area to the source flux 
@@ -70,7 +90,7 @@ the barycentering of the "clean" events through an interpolation - the barycente
 is utilized to predict the correction for each event timestamp. This interpolation is accurate to less than 10 
 microsecond which is sufficient for timing any pulsar.
 
-#### (3) Phase assignment
+#### (4) Phase assignment
 
 Rotational phases are assigned utilizing [PINT](https://nanograv-pint.readthedocs.io/en/latest/) according to a .par 
 file. Polycos, which is implemented in PINT, is used to perform the task to speed up the process. Alternatively, the 
@@ -101,7 +121,7 @@ energybins = [8, 10, 30, 50, 100, 200, 300, 500, 1000]  # keV (bins are [start, 
 channels = [0, 1, 2, 3, 4, 5, 6, 7]  # corresponding channels
 ```
 
-#### (4) visualization
+#### (5) visualization
 
 Once the code has been run on a variety of dates, visualization can be done with the command-line tool 
 **gbmmergepulseprofiles** which merges the pulse profiles in channel (energy) and time. A waterfall plot is created. The
@@ -139,6 +159,9 @@ can be converted to a pulsed flux. This is not implmented yet, but will be in a 
 is a natural calibration source and happens to be exquisitely bright in GBM. This makes the job a little easier. Note
 that the pipeline already properly trakcs the good time interval for each detector per source, hence so the measured 
 rates are already accurate. 
+
+Another wish is to make the library compatible with BGO detectors. As it stands currently, it only works (properly) with
+NaI detectors.
 
 ## Disclaimer
 
