@@ -130,11 +130,11 @@ script can be run as follows:
 ```bash
 gbmmergepulseprofiles 2017-11-01 2017-11-06 -pn crab_171101-171106
 ```
-which merges all the pulse profiles from the above dates and all channels together, but does not perform any further 
-binning per cycle or time. Note that the script is expecting the input directory to the .csv files to be the current 
-directory and dates of interest (i.e., ./171101, ./171102, etc.; the root directory can be changed with -rt --ROOT_DIR). 
-An exmaple plot for the Crab data on the dates 2017-11-01 to 2017-11-06 can be found in the folder data. 
-**gbmmergepulseprofiles** also affords multiple optional input parameters for varying binning.
+which merges all the pulse profiles from the above dates and bins all channels together, yet does not perform any 
+further binning per cycle or time. Note that the script is expecting the input directory to the .csv files to be the 
+current directory and dates of interest (i.e., ./171101, ./171102, etc.; the root directory can be changed with 
+-rt --ROOT_DIR). An exmaple plot for the Crab data on the dates 2017-11-01 to 2017-11-06 can be found in the folder 
+data. **gbmmergepulseprofiles** also affords multiple optional input parameters for varying binning.
 
 ## Expected data structure
 
