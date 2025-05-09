@@ -99,7 +99,7 @@ pulsars! All of the above work only on barycentered data. If the pulsar you are 
 parallax variation, you will need to take care of that separately, e.g., by performing the daily barycentering with a 
 varying position accordingly. 
 
-Steps (2) and (3) can be performed with the primary task of the pipeline as follows:
+Steps (3) and (4) can be performed with the primary task of the pipeline as follows:
 
 ```bash
   gbmpulsarpipe glg_poshist_all_171101_v01.fit all 171101 83.633218 22.014464 crab_171104.par crab ../171101
@@ -154,10 +154,10 @@ data.
 
 ## To do
 
-Creating pulse profile is only part of the fun. One would want to calibrate those so that any pulsed flux measurement 
+Creating pulse profile is only part of the fun. One would want to calibrate those so that any pulsed rate measurement 
 can be converted to a pulsed flux. This is not implmented yet, but will be in a future release. Thankfully, the Crab 
 is a natural calibration source and happens to be exquisitely bright in GBM. This makes the job a little easier. Note
-that the pipeline already properly trakcs the good time interval for each detector per source, hence so the measured 
+that the pipeline already properly trakcs the good time interval for each detector per source, hence the measured 
 rates are already accurate. 
 
 Another wish is to make the library compatible with BGO detectors. As it stands currently, it only works (properly) with
